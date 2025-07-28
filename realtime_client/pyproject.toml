@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-realtime-client"
+version = "0.9"
+authors = [
+  { name="Hein Kolk", email="hein.kolk@tno.nl" }, {name="Daan Vos", email="daan.vos@tno.nl" }
+]
+description = "A client for real-time voice conversations with an Azure OpenAI backend via a proxy."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+# Dependencies are automatically installed by pip
+dependencies = [
+    "numpy",
+    "sounddevice",
+    "openai",
+    "websockets",
+    "python-dotenv"
+]
